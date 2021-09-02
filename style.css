@@ -1,0 +1,21 @@
+#bars {
+    /* display: grid; */
+    /* grid-template: repeat(40, 1fr); */
+    display: flex;
+    gap: 2px;
+    height: 200px;
+    background-color: transparent;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    border: solid 2px cadetblue;
+    background-color: aqua;
+    align-self: flex-end;
+    text-align: center;
+}
+
+h2 {
+    color: blueviolet;
+}
