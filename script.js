@@ -33,8 +33,9 @@ function createBarElements() {
         const bar = document.createElement("div");
         const barBox = bars.appendChild(bar);
         barBox.classList.add("bar");
+
     }
-    // myBarArray = barKeep;
+
     console.log(myBarArray);
 }
 
@@ -55,15 +56,13 @@ function shiftBarsInArray() {
 
     const firstArrayElement = myBarArray.shift();
     myBarArray.push(firstArrayElement);
-
-    // setTimeout(shiftBarsInArray, 500);
 }
 
 function randomBackgroundColor() {
     console.log("randomBackgroundColor");
 
-    const x = Math.floor(Math.random() * 256);
-    const y = Math.floor(Math.random() * 256);
-    const z = Math.floor(Math.random() * 256);
-    return `rgba(${x},${y},${z}, 0.65)`;
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgba(${r},${g},${b}, 1)`;
 }
